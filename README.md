@@ -4,6 +4,13 @@
 
 Who is this for? What is the goal? 
 
+## Dependencies
+- Node.js
+- express
+- SQL
+- mysql2
+- dotenv
+
 ## Requirments 
 
 Your project should fulfill the following requirements:
