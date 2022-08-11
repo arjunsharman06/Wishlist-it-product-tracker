@@ -33,23 +33,26 @@ Product.init(
       // define stock column
       stock: {
           type: DataTypes.INTEGER,
-          allowNull: false,
+          allowNull: true,
+          defaultValue: 1,
           //validation check for numeric value 
           validate: {
               isNumeric: true
           }
       },
-      // define category_id column
+      //define category_id column
       category_id: {
           type: DataTypes.INTEGER,
           references: {
               model: "category",
-              key: "id"
+              key: "id" 
+              
           }
       }
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'product',

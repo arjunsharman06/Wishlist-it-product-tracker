@@ -10,6 +10,12 @@ Who is this for? What is the goal?
 - SQL
 - mysql2
 - dotenv
+- jest 
+
+## Testing Routes 
+
+Categories
+- 
 
 ## Requirments 
 
