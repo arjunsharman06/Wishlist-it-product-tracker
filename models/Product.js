@@ -8,19 +8,35 @@ class Product extends Model {}
 
 // set up fields and rules for Product model
 Product.init(
-  {
-      // define an id column
-      id: {
+    {
+        id: {
           type: DataTypes.INTEGER,
           allowNull: false,
           primaryKey: true,
           autoIncrement: true
-      },
-      // define product_name column
-      product_name: {
+        },
+        title: {
           type: DataTypes.STRING,
           allowNull: false
+        },
+        product_info: {
+          type: DataTypes.STRING,
+          allowNull: false
+        },
+        category_id: {
+          type: DataTypes.INTEGER,
+          references: {
+            model: 'category',
+            key: 'id'
+          }
+        }
+      },
+      {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'post'
       }
-});
+    );
 
 module.exports = Product;
