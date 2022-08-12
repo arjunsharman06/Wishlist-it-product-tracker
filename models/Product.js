@@ -24,22 +24,30 @@ Product.init(
       // define price column
       price: {
           type: DataTypes.DECIMAL(10,2),
-          allowNull: false,
+          allowNull: true,
           //validation check for decimal 
           validate: {
               isDecimal: true
           }
       },
       // define stock column
-      stock: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          defaultValue: 10,
+      desired_price: {
+          type: DataTypes.DECIMAL(10,2),
+          allowNull: true,
+          
           //validation check for numeric value 
           validate: {
-              isNumeric: true
+            isDecimal: true
+        }
+     },
+     // no limit is being set as a blog post can be long 
+      product_note: {
+       type: DataTypes.TEXT,
+          allowNull: true,
+          validate: {
+            len: [1]
           }
-      },
+     },
       // define category_id column
       category_id: {
           type: DataTypes.INTEGER,
