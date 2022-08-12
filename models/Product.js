@@ -48,6 +48,15 @@ Product.init(
             len: [1]
           }
      },
+      quantity: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        defaultValue: 1,
+        //validation check for numeric value 
+        validate: {
+            isNumeric: true
+        }
+     },
       // define category_id column
       category_id: {
           type: DataTypes.INTEGER,
@@ -59,7 +68,6 @@ Product.init(
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'product',
