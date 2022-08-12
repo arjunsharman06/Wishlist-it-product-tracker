@@ -2,7 +2,7 @@
 
 ## User Story 
 
-Who is this for? What is the goal? 
+As a online shopper I want a easy way to keep track of the products I want. 
 
 ## Dependencies
 - Node.js
@@ -12,10 +12,8 @@ Who is this for? What is the goal?
 - dotenv
 - jest 
 
-## Testing Routes 
 
-Categories
-- 
+
 
 ## Requirments 
 
