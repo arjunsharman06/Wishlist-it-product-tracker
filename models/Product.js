@@ -30,7 +30,7 @@ Product.init(
               isDecimal: true
           }
       },
-      // define stock column
+      // define desired price column
       desired_price: {
           type: DataTypes.DECIMAL(10,2),
           allowNull: true,
@@ -40,7 +40,7 @@ Product.init(
             isDecimal: true
         }
      },
-     // no limit is being set as a blog post can be long 
+     // no limit is being set for product notes 
       product_note: {
        type: DataTypes.TEXT,
           allowNull: true,
@@ -48,6 +48,7 @@ Product.init(
             len: [1]
           }
      },
+     // desired quantity column -- default is 1 
       quantity: {
         type: DataTypes.INTEGER,
         allowNull: true,
