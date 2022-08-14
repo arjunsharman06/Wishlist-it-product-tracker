@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import models
 const Product = require('./Product');
 const Category = require('./Category');
@@ -36,3 +37,8 @@ module.exports = {
   Tag,
   ProductTag,
 };
+=======
+const User = require('./User');
+
+module.exports = { User };
+>>>>>>> 4cdfcea3e54777f268b1db00a5c08db5924a4760
