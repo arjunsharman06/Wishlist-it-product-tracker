@@ -1,20 +1,27 @@
-<div class='col-md-6 col-sm-12'>
-  <form class='login-form'>
-    <div class='form-group'>
-      <label for='email-login' class='form-label'>email:</label>
-      <input type='text' id='email-login' class='form-control' />
-    </div>
-    <div class='form-group'>
-      <label for='password-login' class='form-label'>password:</label>
-      <input type='password' id='password-login' class='form-control' />
-    </div>
-    <div>
-      <button type='submit'>login</button>
-      <a href='/signup'>Sign Up here</a>
-    </div>
-  </form>
-  <button type='button' class='btn btn-link btn-floating mx-1'>
-    <i class='fab fa-google'></i>
-  </button>
+<div class='parent'>
+  <div class='inner'>
+    <form class='login-form'>
+      <div class='form-group'>
+        <label for='email-login' class='form-label'>Email:</label>
+        <input type='text' id='email-login' class='form-control' />
+      </div>
+      <div class='form-group'>
+        <label for='password-login' class='form-label'>Password:</label>
+        <input type='password' id='password-login' class='form-control' />
+      </div>
+      <div class='form-group'>
+        <button class='btn btn-primary' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login" type='submit'>Login</button>
+        <a class='btn btn-primary' href='/signup' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register" >Register</a></button>
+      </div>
+
+    </form>
+    <a class='button google' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign in with Google" href='/auth/google'><i
+        class='fab fa-google'
+      ></i></a>
+    {{! <button type='button' class='btn btn-link btn-floating mx-1 btn-google'>
+
+   
+  </button> }}
+  </div>
 </div>
 <script src='/javascript/login.js'></script>
