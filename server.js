@@ -1,31 +1,13 @@
-<<<<<<< HEAD
-const express = require('express');
-const routes = require('./controllers');
-const sequelize = require('./config/connection');
-=======
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
->>>>>>> 4cdfcea3e54777f268b1db00a5c08db5924a4760
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-<<<<<<< HEAD
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// turn on routes
-app.use(routes);
-
-// turn on connection to db and server
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
-});
-=======
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -83,4 +65,3 @@ passport.deserializeUser(function (user, done) {
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
->>>>>>> 4cdfcea3e54777f268b1db00a5c08db5924a4760

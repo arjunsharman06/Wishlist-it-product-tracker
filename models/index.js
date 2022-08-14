@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 // import models
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
+const User = require('./User');
 
 // Products belongsTo Category
 
@@ -36,9 +36,5 @@ module.exports = {
   Category,
   Tag,
   ProductTag,
+  User
 };
-=======
-const User = require('./User');
-
-module.exports = { User };
->>>>>>> 4cdfcea3e54777f268b1db00a5c08db5924a4760
