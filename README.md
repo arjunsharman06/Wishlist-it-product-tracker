@@ -2,7 +2,18 @@
 
 ## User Story 
 
-Who is this for? What is the goal? 
+As a online shopper I want a easy way to keep track of the products I want. 
+
+## Dependencies
+- Node.js
+- express
+- SQL
+- mysql2
+- dotenv
+- jest 
+
+
+
 
 ## Requirments 
 
