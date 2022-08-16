@@ -1,5 +1,8 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
 body,
@@ -9,6 +12,89 @@ html {
   margin: 0;
   font-family: sans-serif;
   color: #333;
+}
+header {
+  border-bottom: 1px solid #ccc;
+  padding: 2%;
+  background-color: #321a08;
+  color: white;
+}
+.H_link {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  color: rgb(223, 248, 235);
+  display: inline;
+  font-size: 25px;
+  text-decoration: none;
+}
+#header_title {
+  padding: 2%;
+  width: 380px;
+  background-color: rgb(223, 248, 235);
+  box-shadow: 2px 5px #888888;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.h_container {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: large;
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: lightgrey;
+  text-align: center;
+  color: black;
+  box-shadow: 5px 10px 15px black;
+}
+.title:hover {
+  color: black;
+  padding: 40px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #003ad48a);
+  transition: padding 1s background-image 2s;
+}
+
+.info {
+  display: inline-flex;
+  font-size: small;
+}
+.post,
+.comment-form,
+.new-post-form,
+.login-form {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.card {
+  width: 100%;
+  border-style: solid;
+  background-color: rgb(223, 248, 235);
+  min-height: 100px;
+}
+
+a,
+#btn_type {
+  color: green;
+}
+.edit-post-form {
+  padding: 5%;
+}
+
+.list,
+.post-list {
+  list-style-type: none;
+}
+#chosen-image {
+  width: 120px;
+  height: 120px;
 }
 
 a {
@@ -199,4 +285,69 @@ footer {
 }
 .signup {
   text-decoration: none !important ;
+}
+/* Navigation */
+.wish-list-nav {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #ffeb3b);
+  font-size: 1.5em;
+  gap: 2rem;
+  height: 150px;
+}
+
+.nav-list {
+  gap: 2rem;
+}
+
+.nav-list a {
+  color: black !important;
+}
+
+.nav-list a:hover {
+  color: #f44336 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Big smartphones [426px -> 600px]*/
+  .wish-list-nav {
+    height: 100px !important;
+  }
+}
+
+.company-title {
+  font-weight: bolder;
+  animation: title-animation 10s infinite;
+  font-style: oblique 60deg;
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+}
+@keyframes title-animation {
+  0% {
+    color: black;
+  }
+  15% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  75% {
+    color: #ff643d;
+  }
+  100% {
+    color: blueviolet;
+  }
+}
+
+.category-card {
+  border-radius: 20px;
+}
+.category-card:hover {
+  box-shadow: 5px 10px rgb(184, 32, 32);
+  border: 5px solid rgb(184, 32, 32);
+  padding: 40px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #378d34);
+}
+
+.cutom-row .row {
+  justify-content: space-evenly;
 }

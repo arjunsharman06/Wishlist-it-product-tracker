@@ -1,0 +1,44 @@
+{{!-- <article class="post">
+   <div class="col-12 col-md-3:w-100 search_area" id="search_area"></div>
+  <img src="/images/{{image_name}}" alt="{{product_name}}"width="128" height="128">
+   <section class="card">
+    <div class="row">
+      <h3 class="title">{{product_name}} </h3>
+    </div>
+    <div class="row">
+      <h3 class="title">{{product_note}} </h3>
+    </div>
+    <div class="row">
+      <p class="info">Stock: {{quantity}}       Price: {{price}}</p>      
+      <p class="info">Category:- {{category_name}} </p>
+    </div>
+  <div class="card_content">
+  </div>
+  </section>
+  </br>
+</article> --}}
+
+<div class='col-10 col-md-10 col-lg-4 col m-2'>
+  <div
+    class='card category-card p-3'
+    style='width: 18rem;'
+    style='max-height: 400px;'
+    class='post'
+  >
+    <img
+      class='card-img-top'
+      src='/images/{{image_name}}'
+      alt='{{product_name}}'
+    />
+    <div class='card-body'>
+      <h5 class='card-title'>{{product_name}}</h5>
+      <p class='card-text'>{{product_note}} </p>
+    </div>
+    <ol class='list-group list-group-flush'>
+      <li class='list-group-item'>Stock: {{quantity}}</li>
+      <li class='list-group-item'>Category: {{category_name}}</li>
+      <li class='list-group-item'>Price: {{price}}</li>
+    </ol>
+    <a href='#' class='btn btn-warning'>Add to List</a>
+  </div>
+</div>

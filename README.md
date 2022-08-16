@@ -1,10 +1,60 @@
-# Group Project 2
+# Wishlist-it product tracker
+
+GitHub Repository:
+
+Heroku Live Page: 
+
+## Introduction 
+
+Wishlist-it is a full-stack app that allows a user to create and manage a list of products. 
+The inspiration was to create an app that is similiar to a shopping list, but with the ability to easily manage information such as desried price, product notes, and other related information about a product.
+
+
+## Authors
+
+- Arjun Sharman 
+  
+  GitHub: [arjunsharman06](https://github.com/arjunsharman06)
+
+- Daniel Rubino  
+  
+  GitHub: [Rubinod1](https://github.com/RubinoD1)
+
+- Umer Farooq 
+
+  GitHub: [umerf123](https://github.com/umerf123)
+
+- William Chow 
+  
+  GitHub: [hippobb](https://github.com/hippobb)
 
 ## User Story 
 
-As a online shopper I want a easy way to keep track of the products I want. 
+As a shopper I want a easy way to keep track of the products I want. 
 
-## Dependencies
+## Features
+
+- The ability to register an account [Username, email, password]
+
+- The ability to login [Email, password]
+
+- Create a product tracked by category and linked to user id. 
+
+- Edit and remove products from list. 
+
+- Add the following product info: 
+   
+   - Product name 
+   - Price
+   - Desired Price
+   - Product notes 
+   - Quantity (default is 1)
+
+- The ability to add a image to a product 
+
+
+
+## Dependencies (Technologies Used)
 - Node.js
 - express
 - SQL
@@ -12,6 +62,99 @@ As a online shopper I want a easy way to keep track of the products I want.
 - dotenv
 - jest 
 
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+- DB_NAME='wishlist_it_db'
+- DB_USER='root'
+- DB_PASSWORD='YOUR PASSWORD'
+- GOOGLE_CLIENT_ID=
+- GOOGLE_CLIENT_SECRET=
+
+A example .env file can be found in the root of the repository. The file is:   
+
+.env.EXAMPLE
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Create the database 
+
+Login to MySQL 
+
+```bash
+  mysql -u root p
+```
+
+Run the schema.sql file
+
+```bash
+  SOURCE db/schema.sql;
+```
+
+To check that wishlist_it_db was created 
+
+```bash
+  SHOW DATABASES; 
+```
+
+Exit MySQL
+
+```bash
+  quit; 
+```
+
+
+## Seed the database 
+
+To seed the database 
+
+```bash
+  npm run seeds
+```
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+
+
+
+
+
+
+
+
+## Screenshots 
 
 
 
@@ -47,35 +190,4 @@ Your project should fulfill the following requirements:
 
     Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-
-## Quick Reference 
-
-Where to Find Help in the Curriculum
-
-You may find you need to review certain skills to meet the project requirements. The following tips can help you refresh your knowledge and overcome any obstacles you encounter:
-Deploying to Heroku
-
-Review Module 11: Express.js, Lesson 1: Set Up Express.js Server and GET Routes (especially 11.1.6 Deploy to Heroku); Module 13: Object Relational Mapping (ORM), Lesson 5: Create the Comment Model and Deploy to Heroku (especially 13.5.6: Deploy to Heroku); and Module 14: Model-View-Controller (MVC), Lesson 5: The Dashboard View (especially 14.5.6: Create an Edit Post Page) to get a refresher on deploying to Heroku.
-RESTful APIs
-
-For a reminder on how to create a RESTful API with GET and POST routes for retrieving and adding new data, look at Module 11: Express.js, Lesson 1: Set Up Express.js Server and GET Routes and Lesson 2: Create Data Using POST Routes (along with the rest of Module 11).
-
-For implementation with a database, see Module 12: SQL, Lesson 2: Create Candidate Routes, Lesson 3: Join with Parties Table, and Lesson 4: Create Voter Table and Routes.
-
-For implementation with the Sequelize ORM, look at Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model, Lesson 2: Create the Login Route, Lesson 3: Create a Post Model, and Lesson 4: Implement a Voting System.
-Connecting to a Database
-
-For a refresher on connecting to a database, review Module 12: SQL, Lesson 1: Introduction to SQL and Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model (especially 13.1.4: Scaffold the Application Architecture).
-Environment Variables
-
-For a reminder on how to add sensitive personal information to environment variables, revisit Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model (especially 13.1.4: Scaffold the Application Architecture).
-Authentication
-
-Look at Module 13: Object Relational Mapping (ORM), Lesson 2: Create the Login Route and Module 14: Model-View-Controller (MVC), Lesson 2: Create the User Login and Lesson 5: Create the Dashboard View to review adding authentication to your application.
-MVC Folder Structure
-
-To review structuring your application to follow the MVC paradigm, look at Module 14: Model-View-Controller (MVC), Lesson 1: The Homepage View (especially 14.1.4: Set Up the Template Engine).
-Templating
-
-Revisit Module 14: Model-View-Controller (MVC), Lesson 1: The Homepage View (especially 14.1.4: Set Up the Template Engine) to review templating and setting up Handlebars.js.
 
