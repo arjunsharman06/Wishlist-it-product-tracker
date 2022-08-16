@@ -1,5 +1,9 @@
 # Wishlist-it product tracker
 
+GitHub Repository:
+
+Heroku Live Page: 
+
 ## Introduction 
 
 Wishlist-it is a full-stack app that allows a user to create and manage a list of products. 
@@ -27,6 +31,26 @@ The inspiration was to create an app that is similiar to a shopping list, but wi
 ## User Story 
 
 As a shopper I want a easy way to keep track of the products I want. 
+
+## Features
+
+- The ability to register an account [Username, email, password]
+
+- The ability to login [Email, password]
+
+- Create a product tracked by category and linked to user id. 
+
+- Edit and remove products from list. 
+
+- Add the following product info: 
+   
+   - Product name 
+   - Price
+   - Desired Price
+   - Product notes 
+   - Quantity (default is 1)
+
+- The ability to add a image to a product 
 
 
 
