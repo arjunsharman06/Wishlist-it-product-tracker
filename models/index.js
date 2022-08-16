@@ -11,6 +11,14 @@ Product.belongsTo(Category, {
   foreignKey: 'category_id',
 });
 
+Product.belongsTo(User, {
+  foreignKey: 'user_id'
+});
+
+User.hasMany(Product, {
+  foreignKey: 'user_id'
+})
+
 // Categories have many Products
 
 Category.hasMany(Product, {
