@@ -18,7 +18,7 @@ The inspiration was to create an app that is similiar to a shopping list, but wi
 
 - Daniel Rubino  
   
-  GitHub:[Rubinod1](https://github.com/RubinoD1)
+  GitHub: [Rubinod1](https://github.com/RubinoD1)
 
 - Umer Farooq 
 
@@ -53,6 +53,7 @@ As a shopper I want a easy way to keep track of the products I want.
 - The ability to add a image to a product 
 
 
+
 ## Dependencies (Technologies Used)
 - Node.js
 - express
@@ -62,6 +63,19 @@ As a shopper I want a easy way to keep track of the products I want.
 - jest 
 
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+- DB_NAME='wishlist_it_db'
+- DB_USER='root'
+- DB_PASSWORD='YOUR PASSWORD'
+- GOOGLE_CLIENT_ID=
+- GOOGLE_CLIENT_SECRET=
+
+A example .env file can be found in the root of the repository. The file is:   
+
+.env.EXAMPLE
 
 ## Run Locally
 
