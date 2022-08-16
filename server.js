@@ -23,9 +23,59 @@ const sess = {
 
 app.use(session(sess));
 app.use(passport.authenticate('session'));
-// const helpers = require('./utils/helpers');
+const helpers = require('./utils/helpers');
 
-const hbs = exphbs.create();
+const hbs = exphbs.create({ helpers });
+
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/images/');
+  },
+  filename: function (req, file, cb) {
+    cb(
+      null,
+      new Date().getFullYear().toString() +
+        (new Date().getMonth() + 1).toString() +
+        new Date().getDate().toString() +
+        new Date().getHours().toString() +
+        new Date().getMinutes().toString() +
+        new Date().getSeconds().toString() +
+        file.originalname.slice(-4)
+    );
+  },
+});
+const fileFilter = (req, file, cb) => {
+  if (
+    file.mimetype === 'image/jpeg' ||
+    file.mimetype === 'image/jpg' ||
+    file.mimetype === 'image/png' ||
+    file.mimetype === 'image/gif'
+  ) {
+    cb(null, true);
+  } else {
+    cb(null, false);
+  }
+};
+
+const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+});
+
+app.post('/upload/send_file', upload.array('img', 1), (req, res, next) => {
+  let file_name =
+    new Date().getFullYear().toString() +
+    (new Date().getMonth() + 1).toString() +
+    new Date().getDate().toString() +
+    new Date().getHours().toString() +
+    new Date().getMinutes().toString() +
+    new Date().getSeconds().toString();
+  req.files[0].originalname.slice(-4);
+  //res.status(201).send();
+  res.redirect('/');
+});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

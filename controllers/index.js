@@ -1,12 +1,13 @@
 const router = require('express').Router();
 
-const apiRouter = require('./api/');
-const homeRouter = require('./home-routes');
-// var authRouter = require('./auth');
+const apiRoutes = require('./api/');
+const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
+const uploadRoutes = require('./upload-routes.js');
 
-router.use('/', homeRouter);
-router.use('/api', apiRouter);
-// router.use('/google', authRouter);
+router.use('/', homeRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/upload', uploadRoutes);
+router.use('/api', apiRoutes);
 
 module.exports = router;
-
