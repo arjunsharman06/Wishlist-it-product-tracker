@@ -1,6 +1,6 @@
 
-let category=JSON.parse(document.getElementById('abc').getAttribute('data'));
-console.log(category);
+let category=JSON.parse(document.getElementById('cat').getAttribute('data'));
+console.log("html",category);
 let left_list=document.getElementById('left_list');
 for (var i = 0; i < category.length; i++) {
     var list_item = document.createElement("a");

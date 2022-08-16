@@ -21,7 +21,6 @@ router.get('/', (req, res) => {
 })
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
-      console.log(posts);
       let cat=[];
       let temp=1;
       for (let i=0;i<posts.length;i++){

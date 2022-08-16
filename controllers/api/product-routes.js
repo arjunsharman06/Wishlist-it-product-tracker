@@ -5,7 +5,10 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // find all products
 router.get('/', (req, res) => {
+    
+  console.log("parm",res.req.params);
   Product.findAll({
+    
       attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id'],
       include: [
           {

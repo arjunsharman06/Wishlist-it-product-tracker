@@ -10,7 +10,7 @@ router.get('/:id', (req, res) => {
     include: [
         {
             model: Product,
-            attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id']
+            attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id','image_name'],
         }
     ]
 })
@@ -38,7 +38,7 @@ router.get('/:id', (req, res) => {
       }
 
       let cats=JSON.stringify(cat);
-      console.log(posts);
+      console.log(cats);
       res.render('dashboard', {
         posts,
         cats,

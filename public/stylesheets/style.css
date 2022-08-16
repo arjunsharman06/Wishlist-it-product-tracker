@@ -75,3 +75,7 @@ a,#btn_type{
 .list,.post-list{
   list-style-type: none;
 }
+#chosen-image {
+  width: 120px;
+  height:120px;
+}
