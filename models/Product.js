@@ -66,12 +66,6 @@ Product.init(
         key: 'id',
       },
     },
-    image_name: {
-      type: DataTypes.STRING,
-      unique: true,
-      allowNull: false,
-    },
-  },
         // identifies the user who created the product by using the User model's id column 
         user_id: {
           type: DataTypes.INTEGER,
@@ -79,8 +73,14 @@ Product.init(
             model: "user",
             key: "id"
           }
-        }
-      },
+        },
+      
+        image_name: {
+          type: DataTypes.STRING,
+          unique: true,
+          allowNull: true,
+      }
+    },
   {
     sequelize,
     freezeTableName: true,
