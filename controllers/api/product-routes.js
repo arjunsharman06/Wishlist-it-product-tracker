@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { Product, Category, Tag, ProductTag } = require('../../models');
+const { Product, Category, Tag, ProductTag, User } = require('../../models');
 
 // The `/api/products` endpoint
 
 // find all products
 router.get('/', (req, res) => {
   Product.findAll({
-      attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id'],
+      attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id', 'user_id'],
       include: [
           {
               model: Category,
@@ -15,6 +15,10 @@ router.get('/', (req, res) => {
           {
               model: Tag,
               attributes: ['id', 'tag_name']
+          },
+          {
+            model: User,
+            attributes: ['username']
           }
       ]
   })
@@ -32,7 +36,7 @@ router.get('/:id', (req, res) => {
       where: {
           id: req.params.id
       },
-      attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note' , 'quantity' , 'category_id'],
+      attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note' , 'quantity' , 'category_id', 'user_id'],
       include: [
           {
               model: Category,
@@ -41,6 +45,10 @@ router.get('/:id', (req, res) => {
           {
               model: Tag,
               attributes: ['id', 'tag_name']
+          },
+          {
+            Model: User,
+            attributes: ['id', 'username']
           }
       ]
   })
@@ -67,7 +75,7 @@ router.post('/', (req, res) => {
                   return {
                       product_id: product.id,
                       tag_id,
-                  };
+                    };
               });
               return ProductTag.bulkCreate(productTagIdArr);
           }
