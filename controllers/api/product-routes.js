@@ -6,7 +6,17 @@ const { Product, Category, Tag, ProductTag, User } = require('../../models');
 // find all products
 router.get('/', (req, res) => {
   Product.findAll({
-      attributes: ['id', 'product_name', 'price', 'desired_price', 'product_note', 'quantity' ,'category_id', 'user_id'],
+      attributes: [
+        'id',
+        'product_name',
+        'price',
+        'desired_price',
+        'product_note',
+        'quantity' ,
+        'category_id',
+        'user_id',
+        'image_name'
+      ],
       include: [
           {
               model: Category,
@@ -41,8 +51,10 @@ router.get('/:id', (req, res) => {
       'price',
       'desired_price',
       'product_note',
-      'quantity',
+      'quantity' ,
       'category_id',
+      'user_id',
+      'image_name'
     ],
      include: [
           {
@@ -58,11 +70,6 @@ router.get('/:id', (req, res) => {
               attributes: ['username']
           }
       ]
-      {
-        model: Tag,
-        attributes: ['id', 'tag_name'],
-      },
-    ],
   })
     .then((dbProductData) => {
       if (!dbProductData) {
