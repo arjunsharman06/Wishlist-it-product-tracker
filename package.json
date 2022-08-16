@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Who is this for? What is the goal?",
   "main": "server.js",
-  "engines": {
-    "node": "16.15.1"
-  },
+ 
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js",
