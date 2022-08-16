@@ -7,14 +7,16 @@ const productData = [
     "desired_price": "21.99",
     "product_note": "I need this book for my English course.",
     "category_id": "1",
-    "tagIds": [1]
+    "tagIds": [1],
+    "user_id": "1"
   },
   {
     "product_name": "Bulk case of computer paper",
     "price": "59.99",
     "quantity": "2",
     "category_id": "11",
-    "tagIds": [1]
+    "tagIds": [1],
+    "user_id": "1"
   },
   {
     "product_name": "BenQ monitor",
@@ -23,7 +25,8 @@ const productData = [
     "product_note": "For my new gaming rig.",
     "quantity": "2",
     "category_id": "6",
-    "tagIds": [2]
+    "tagIds": [2],
+    "user_id": "1"
   },
   {
     "product_name": "weights",
@@ -31,14 +34,16 @@ const productData = [
     "desired_price": "449.99",
     "product_note": "Buff boy in the new year",
     "category_id": "10",
-    "tagIds": [3]
+    "tagIds": [3],
+    "user_id": "1"
   },
   {
     "product_name": "Air fryer",
     "price": "99.99",
     "desired_price": "89.99",
     "category_id": "8",
-    "tagIds": [1]
+    "tagIds": [1],
+    "user_id": "1"
   }
 ];
 

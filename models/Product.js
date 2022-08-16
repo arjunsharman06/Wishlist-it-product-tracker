@@ -65,8 +65,16 @@ Product.init(
               model: "category",
               key: "id"
           }
-      }
-  },
+        },
+        // identifies the user who created the product by using the User model's id column 
+        user_id: {
+          type: DataTypes.INTEGER,
+          references: {
+            model: "user",
+            key: "id"
+          }
+        }
+      },
   {
     sequelize,
     freezeTableName: true,
