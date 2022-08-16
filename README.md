@@ -53,9 +53,6 @@ As a shopper I want a easy way to keep track of the products I want.
 - The ability to add a image to a product 
 
 
-
-
-
 ## Dependencies (Technologies Used)
 - Node.js
 - express
@@ -63,6 +60,85 @@ As a shopper I want a easy way to keep track of the products I want.
 - mysql2
 - dotenv
 - jest 
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Create the database 
+
+Login to MySQL 
+
+```bash
+  mysql -u root p
+```
+
+Run the schema.sql file
+
+```bash
+  SOURCE db/schema.sql;
+```
+
+To check that wishlist_it_db was created 
+
+```bash
+  SHOW DATABASES; 
+```
+
+Exit MySQL
+
+```bash
+  quit; 
+```
+
+
+## Seed the database 
+
+To seed the database 
+
+```bash
+  npm run seeds
+```
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+
+
+
+
+
+
+
 
 ## Screenshots 
 
