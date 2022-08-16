@@ -1,16 +1,52 @@
-# Group Project 2
+# Wishlist-it product tracker
+
+## Introduction 
+
+Wishlist-it is a full-stack app that allows a user to create and manage a list of products. 
+The inspiration was to create an app that is similiar to a shopping list, but with the ability to easily manage information such as desried price, product notes, and other related information about a product.
+
+
+## Authors
+
+- Arjun Sharman 
+  
+  GitHub: [arjunsharman06](https://github.com/arjunsharman06)
+
+- Daniel Rubino  
+  
+  GitHub:[Rubinod1](https://github.com/RubinoD1)
+
+- Umer Farooq 
+
+  GitHub: [umerf123](https://github.com/umerf123)
+
+- William Chow 
+  
+  GitHub: [hippobb](https://github.com/hippobb)
 
 ## User Story 
 
-As a online shopper I want a easy way to keep track of the products I want. 
+As a shopper I want a easy way to keep track of the products I want. 
 
-## Dependencies
+
+
+
+
+## Dependencies (Technologies Used)
 - Node.js
 - express
 - SQL
 - mysql2
 - dotenv
 - jest 
+
+## Screenshots 
+
+
+
+
+
+
 
 
 
@@ -47,35 +83,4 @@ Your project should fulfill the following requirements:
 
     Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-
-## Quick Reference 
-
-Where to Find Help in the Curriculum
-
-You may find you need to review certain skills to meet the project requirements. The following tips can help you refresh your knowledge and overcome any obstacles you encounter:
-Deploying to Heroku
-
-Review Module 11: Express.js, Lesson 1: Set Up Express.js Server and GET Routes (especially 11.1.6 Deploy to Heroku); Module 13: Object Relational Mapping (ORM), Lesson 5: Create the Comment Model and Deploy to Heroku (especially 13.5.6: Deploy to Heroku); and Module 14: Model-View-Controller (MVC), Lesson 5: The Dashboard View (especially 14.5.6: Create an Edit Post Page) to get a refresher on deploying to Heroku.
-RESTful APIs
-
-For a reminder on how to create a RESTful API with GET and POST routes for retrieving and adding new data, look at Module 11: Express.js, Lesson 1: Set Up Express.js Server and GET Routes and Lesson 2: Create Data Using POST Routes (along with the rest of Module 11).
-
-For implementation with a database, see Module 12: SQL, Lesson 2: Create Candidate Routes, Lesson 3: Join with Parties Table, and Lesson 4: Create Voter Table and Routes.
-
-For implementation with the Sequelize ORM, look at Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model, Lesson 2: Create the Login Route, Lesson 3: Create a Post Model, and Lesson 4: Implement a Voting System.
-Connecting to a Database
-
-For a refresher on connecting to a database, review Module 12: SQL, Lesson 1: Introduction to SQL and Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model (especially 13.1.4: Scaffold the Application Architecture).
-Environment Variables
-
-For a reminder on how to add sensitive personal information to environment variables, revisit Module 13: Object Relational Mapping (ORM), Lesson 1: Set Up a User Model (especially 13.1.4: Scaffold the Application Architecture).
-Authentication
-
-Look at Module 13: Object Relational Mapping (ORM), Lesson 2: Create the Login Route and Module 14: Model-View-Controller (MVC), Lesson 2: Create the User Login and Lesson 5: Create the Dashboard View to review adding authentication to your application.
-MVC Folder Structure
-
-To review structuring your application to follow the MVC paradigm, look at Module 14: Model-View-Controller (MVC), Lesson 1: The Homepage View (especially 14.1.4: Set Up the Template Engine).
-Templating
-
-Revisit Module 14: Model-View-Controller (MVC), Lesson 1: The Homepage View (especially 14.1.4: Set Up the Template Engine) to review templating and setting up Handlebars.js.
 
