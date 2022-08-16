@@ -158,13 +158,6 @@ To run tests, run the following command
 
 
 
-
-
-
-
-
-
-
 ## Requirments 
 
 Your project should fulfill the following requirements:
