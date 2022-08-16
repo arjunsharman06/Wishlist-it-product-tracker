@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
           },
           {
             Model: User,
-            attributes: ['id', 'username']
+            attributes: ['username']
           }
       ]
   })
