@@ -2,6 +2,9 @@
   "name": "group-project-2-",
   "version": "1.0.0",
   "description": "Who is this for? What is the goal?",
+  "engines": {
+    "node": "16.x"
+    },
   "main": "server.js",
  
   "scripts": {
