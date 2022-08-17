@@ -1,8 +1,8 @@
 # Wishlist-it product tracker
 
-GitHub Repository:
+GitHub Repository: https://github.com/RubinoD1/Wishlist-it-product-tracker
 
-Heroku Live Page: https://vast-depths-33526.herokuapp.com/ | https://git.heroku.com/vast-depths-33526.git
+Heroku Live Page: https://vast-depths-33526.herokuapp.com/ 
 
 ## Introduction 
 
