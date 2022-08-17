@@ -74,7 +74,7 @@ app.post('/upload/send_file', upload.array('img', 1), (req, res, next) => {
     new Date().getSeconds().toString();
   req.files[0].originalname.slice(-4);
   //res.status(201).send();
-  res.redirect('/');
+  res.redirect('/dashboard');
 });
 
 app.engine('handlebars', hbs.engine);
