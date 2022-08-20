@@ -4,8 +4,8 @@ let fileName = document.getElementById('img');
 
 
 fileElement.onchange = () => {
-  console.log('www');
-  let reader = new FileReader();
+  console.log('change');
+   let reader = new FileReader();
   reader.readAsDataURL(fileElement.files[0]);
   reader.onload = () => {
     chosenImage.setAttribute('src', reader.result);
@@ -13,3 +13,5 @@ fileElement.onchange = () => {
 
   fileName.textContent = fileElement.files[0].name;
 };
+
+document.getElementById('img').addEventListener('click',()=>{console.log("abc")})

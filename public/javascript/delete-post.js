@@ -1,6 +1,6 @@
 async function deleteFormHandler(event) {
   event.preventDefault();
-  let url="/shopping/"+document.getElementById('delete_post').getAttribute('data');
+  let url="/shopping/"+event.target.id;
   console.log(url);
   const response = await fetch(url, {
     method: 'DELETE'
@@ -10,4 +10,4 @@ async function deleteFormHandler(event) {
 
 }
 
-document.getElementById('delete_post').addEventListener('click', deleteFormHandler);
+document.getElementById('display').addEventListener('click', deleteFormHandler);
