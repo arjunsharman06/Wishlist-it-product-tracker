@@ -4,8 +4,10 @@
   "description": "Who is this for? What is the goal?",
   "engines": {
     "node": "16.x"
-  },
+},
+
   "main": "server.js",
+ 
   "scripts": {
     "test": "jest",
     "seeds": "node seeds/index.js",
