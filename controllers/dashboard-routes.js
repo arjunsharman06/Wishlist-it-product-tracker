@@ -51,7 +51,7 @@ router.get('/:id', withAuth,(req, res) => {
       }
       let cats = JSON.stringify(cat);
       console.log(posts);
-      res.render('dashboard', {
+      res.render('mydashboard', {
         posts,
         cats,
         loggedIn: req.session.loggedIn,

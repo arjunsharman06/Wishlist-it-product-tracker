@@ -2,7 +2,7 @@
 
 GitHub Repository:
 
-Heroku Live Page: 
+Heroku Live Page: https://vast-depths-33526.herokuapp.com/ | https://git.heroku.com/vast-depths-33526.git
 
 ## Introduction 
 
