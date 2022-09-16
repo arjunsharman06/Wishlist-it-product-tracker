@@ -391,3 +391,21 @@ footer {
   gap: 1rem;
   margin-top: 5px;
 }
+
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.category-card img {
+  display: block;
+  /* max-width: 230px; */
+  max-height: 160px;
+  width: auto;
+  height: auto;
+}
+
+.btn-success {
+  margin-left: 5px;
+}

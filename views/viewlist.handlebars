@@ -1,4 +1,51 @@
-{{>navigation}}
+<nav class='navbar navbar-expand-lg navbar-light bg-light wish-list-nav'>
+  <a class='navbar-brand' href='#'><h1 class='company-title'>Wish List</h1></a>
+  <button
+    class='navbar-toggler'
+    type='button'
+    data-toggle='collapse'
+    data-target='#navbarNav'
+    aria-controls='navbarNav'
+    aria-expanded='false'
+    aria-label='Toggle navigation'
+  >
+    <span class='navbar-toggler-icon'></span>
+  </button>
+  <div class='collapse navbar-collapse' id='navbarNav'>
+    <ul class='navbar-nav nav-list'>
+      <li
+        class='nav-item active'
+        data-bs-toggle='tooltip'
+        data-bs-placement='top'
+        title='Home'
+      >
+        <a class='nav-link' href='/dashboard'>Home
+          <span class='sr-only'>(current)</span></a>
+      </li>      
+      <li
+        class='nav-item'
+        data-bs-toggle='tooltip'
+        data-bs-placement='top'
+        title='View List'
+      >
+        <a
+          class='nav-link'
+          id='view-list'
+          style='cursor: pointer;'
+          href='/api/lists/'
+        >View List</a>
+      </li>
+      <li
+        class='nav-item'
+        data-bs-toggle='tooltip'
+        data-bs-placement='top'
+        title='Logout'
+      >
+        <a class='nav-link' href='/logout'>Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 {{!-- {{products}} --}}
 <div class="cutom-row">
 <div class='row'>
@@ -25,11 +72,11 @@
       class='card-img-top'
       src='/images/{{product.image_name}}'
       alt='{{product.product_name}}'
-      style='max-height: 240px;'
+      style=''
     />
     <div class='card-body'>
       <h5 class='card-title'>{{product.product_name}}</h5>
-      <p class='card-text'>{{product.product_note}} </p>
+      <p class='card-text' data-toggle="tooltip" data-placement="top" title=`{{product.product_note}}`>{{product.product_note}} </p>
     </div>
     <ol class='list-group list-group-flush'>
       <li class='list-group-item'>Stock: {{product.quantity}}</li>

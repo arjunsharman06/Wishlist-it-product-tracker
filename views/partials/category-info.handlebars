@@ -14,11 +14,16 @@
       class='card-img-top'
       src='/images/{{image_name}}'
       alt='{{product_name}}'
-      style='max-height: 240px;'
+      style=''
     />
     <div class='card-body'>
       <h5 class='card-title'>{{product_name}}</h5>
-      <p class='card-text'>{{product_note}} </p>
+      <p
+        class='card-text'
+        data-toggle='tooltip'
+        data-placement='top'
+        title='{{product_note}}'
+      >{{product_note}} </p>
     </div>
     <ol class='list-group list-group-flush'>
       <li class='list-group-item'>Stock: {{quantity}}</li>

@@ -18,6 +18,10 @@ async function deleteFormHandler(event) {
   }
 }
 
-document
-  .querySelector('#btn-delete')
-  .addEventListener('click', deleteFormHandler);
+const delbtns = document
+  .querySelector('#right_list')
+  .querySelectorAll('#btn-delete');
+
+for (i of delbtns) {
+  i.addEventListener('click', deleteFormHandler);
+}
