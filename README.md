@@ -77,7 +77,6 @@ As a shopper, I want a easy way to keep track of the products I want.
 - JawsDB
 - Handlebars.js
 - Express-session
-- Google OAuth
 
 ## Environment Variables
 
@@ -86,8 +85,6 @@ To run this project, you will need to add the following environment variables to
 - DB_NAME='wishlist_it_db'
 - DB_USER='root'
 - DB_PASSWORD='YOUR PASSWORD'
-- GOOGLE_CLIENT_ID=
-- GOOGLE_CLIENT_SECRET=
 
 A example .env file can be found in the root of the repository. The file is:
 
