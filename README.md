@@ -1,8 +1,8 @@
 # Wishlist-it product tracker
 
-GitHub Repository: https://github.com/RubinoD1/Wishlist-it-product-tracker
+GitHub Repository: https://github.com/arjunsharman06/Wishlist-it-product-tracker
 
-Heroku Live Page: https://vast-depths-33526.herokuapp.com/
+Heroku Live Page: https://wish-list-cart.herokuapp.com/
 
 ## Table of Contents
 
@@ -95,7 +95,7 @@ A example .env file can be found in the root of the repository. The file is:
 Clone the project
 
 ```bash
-  git clone https://github.com/RubinoD1/Wishlist-it-product-tracker.git
+  git clone https://github.com/arjunsharman06/Wishlist-it-product-tracker
 ```
 
 Go to the project directory
