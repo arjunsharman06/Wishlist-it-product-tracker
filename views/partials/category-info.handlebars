@@ -12,7 +12,11 @@
     </div>
     <img
       class='card-img-top'
-      src='/images/{{image_name}}'
+      {{#if image_name}}
+         src='/images/{{image_name}}'
+      {{else}}
+         src='/images/no-image-available.jpg'
+      {{/if}}
       alt='{{product_name}}'
       style=''
     />
@@ -28,7 +32,7 @@
     <ol class='list-group list-group-flush'>
       <li class='list-group-item'>Stock: {{quantity}}</li>
       <li class='list-group-item'>Category:
-        {{category.category.category_name}}</li>
+        {{category.category_name}}</li>
       <li class='list-group-item'>Price: {{price}}</li>
     </ol>
     <button class='btn btn-warning'>Add to List</button>

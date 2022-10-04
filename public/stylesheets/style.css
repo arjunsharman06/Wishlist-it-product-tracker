@@ -409,3 +409,7 @@ footer {
 .btn-success {
   margin-left: 5px;
 }
+
+.card-img-top {
+  background-image: url('/images/home.png');
+}

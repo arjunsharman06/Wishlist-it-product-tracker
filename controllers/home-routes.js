@@ -133,9 +133,8 @@ router.get('/product/:id', (req, res) => {
   })
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      console.log(posts);
-      const tag = posts[0].tags[0].tag_name;
-      console.log(tag);
+      const tag = !posts[0].tags[0] ? '' : posts[0].tags[0].tag_name;
+
       res.render('edit-products', {
         posts,
         tag,

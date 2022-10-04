@@ -92,7 +92,8 @@ router.post('/', upload.array('image', 1), (req, res) => {
     desired_price: req.body.desired_price,
     quantity: req.body.quantity,
     product_note: req.body.product_note,
-    image_name: req.files[0].filename,
+    image_name:
+      req.files[0].filename === undefined ? '' : req.files[0].filename,
     category_id: req.body.category_id,
     user_id: req.session.user_id,
   })

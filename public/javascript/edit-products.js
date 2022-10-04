@@ -49,6 +49,7 @@ async function editProduct(event) {
         'data-id'
       )
   );
+
   let url =
     picture_url.files.length > 0
       ? picture_url.files[0]
